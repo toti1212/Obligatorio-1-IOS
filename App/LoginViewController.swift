@@ -37,8 +37,10 @@ class LoginViewController: UIViewController {
             if(emailTextField.text == validEmail){
                 
                 if(passTextField.text == validPass){
+                    performSegueWithIdentifier("Inicio", sender: nil)
+                    /*
                     let next = self.storyboard?.instantiateViewControllerWithIdentifier("Inicio") as! FirstViewController
-                    self.presentViewController(next, animated: true, completion: nil)
+                    self.presentViewController(next, animated: true, completion: nil)*/
                 }else{
                     errorMessageLabel.text = "Password Incorrect"
                 }
