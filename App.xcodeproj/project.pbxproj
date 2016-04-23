@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		39DE7037A82DE4B4B05F8D31 /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59A307F12E2EC231FFDCFCE /* Pods_App.framework */; };
 		8350F44B1CC984C50096AD61 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350F44A1CC984C50096AD61 /* TableViewCell.swift */; };
+		83B3E2EF1CCAF0CE00B8DB73 /* CuponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3E2EE1CCAF0CE00B8DB73 /* CuponViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		83B3E2F21CCB007D00B8DB73 /* Cupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3E2F11CCB007D00B8DB73 /* Cupon.swift */; settings = {ASSET_TAGS = (); }; };
 		83EA4ECC1CC04AFB00C20EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA4ECB1CC04AFB00C20EC1 /* AppDelegate.swift */; };
 		83EA4ECE1CC04AFB00C20EC1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA4ECD1CC04AFB00C20EC1 /* FirstViewController.swift */; };
 		83EA4ED01CC04AFB00C20EC1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA4ECF1CC04AFB00C20EC1 /* SecondViewController.swift */; };
@@ -23,6 +25,8 @@
 		17AC9D317084184D0EEA17E4 /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
 		55A60B19A4D78EA50D1CA506 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
 		8350F44A1CC984C50096AD61 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		83B3E2EE1CCAF0CE00B8DB73 /* CuponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuponViewController.swift; sourceTree = "<group>"; };
+		83B3E2F11CCB007D00B8DB73 /* Cupon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cupon.swift; sourceTree = "<group>"; };
 		83EA4EC81CC04AFB00C20EC1 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EA4ECB1CC04AFB00C20EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83EA4ECD1CC04AFB00C20EC1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		83B3E2F01CCAFEB400B8DB73 /* Clases */ = {
+			isa = PBXGroup;
+			children = (
+				83B3E2F11CCB007D00B8DB73 /* Cupon.swift */,
+			);
+			name = Clases;
+			sourceTree = "<group>";
+		};
 		83EA4EBF1CC04AFB00C20EC1 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +89,7 @@
 		83EA4ECA1CC04AFB00C20EC1 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				83B3E2F01CCAFEB400B8DB73 /* Clases */,
 				83EA4ECB1CC04AFB00C20EC1 /* AppDelegate.swift */,
 				83EA4ECD1CC04AFB00C20EC1 /* FirstViewController.swift */,
 				83EA4ECF1CC04AFB00C20EC1 /* SecondViewController.swift */,
@@ -87,6 +100,7 @@
 				83EA4EDF1CC04C9500C20EC1 /* LoginViewController.swift */,
 				83FE843A1CC85FB9005B7B97 /* TabBarViewController.swift */,
 				8350F44A1CC984C50096AD61 /* TableViewCell.swift */,
+				83B3E2EE1CCAF0CE00B8DB73 /* CuponViewController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -222,7 +236,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				83EA4EE01CC04C9500C20EC1 /* LoginViewController.swift in Sources */,
+				83B3E2EF1CCAF0CE00B8DB73 /* CuponViewController.swift in Sources */,
 				83EA4ED01CC04AFB00C20EC1 /* SecondViewController.swift in Sources */,
+				83B3E2F21CCB007D00B8DB73 /* Cupon.swift in Sources */,
 				83EA4ECC1CC04AFB00C20EC1 /* AppDelegate.swift in Sources */,
 				8350F44B1CC984C50096AD61 /* TableViewCell.swift in Sources */,
 				83FE843B1CC85FB9005B7B97 /* TabBarViewController.swift in Sources */,
