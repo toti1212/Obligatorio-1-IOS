@@ -11,7 +11,7 @@ import QRCode
 
 class FirstViewController: UIViewController {
     
-  
+    
     @IBOutlet weak var cardImageView: UIImageView!
     
 

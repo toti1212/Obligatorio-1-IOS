@@ -46,12 +46,22 @@ class SecondViewController: UIViewController,UITableViewDelegate, UITableViewDat
         cell.profileName?.text = "Hola" //apps[indexPath].profileName
         cell.profileDescription?.text = "Descripcion"
         
+        
         return cell
         
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.performSegueWithIdentifier("VerCupon", sender: nil)
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "VerCupon"){
+            let cupon = segue.destinationViewController as! CuponViewController;
+            cupon.descripcion = "Toti1212"
+            cupon.nombre = "Santiago"
+        }
     }
 
 

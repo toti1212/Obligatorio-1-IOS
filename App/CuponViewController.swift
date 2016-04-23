@@ -14,9 +14,18 @@ class CuponViewController: UIViewController {
 
     @IBOutlet weak var imageCuponQR: UIImageView!
     @IBOutlet weak var imageCupon: UIImageView!
+    @IBOutlet weak var productName: UILabel!
+    @IBOutlet weak var desc: UILabel!
+    
+    var descripcion:String!
+    var nombre : String!
     
     override func viewDidLoad() {
+
         super.viewDidLoad()
+        
+        self.productName.text = descripcion
+        self.desc.text = nombre
         
         imageCuponQR.image = {
             var qrCode = QRCode("ucu@ucu.com")!
