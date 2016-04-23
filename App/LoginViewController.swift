@@ -21,8 +21,8 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    let validEmail:String = "ucu@ucu.com"
-    let validPass:String = "ucu2016"
+    let validEmail:String = "."
+    let validPass:String = "."
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passTextField: UITextField!

@@ -18,28 +18,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YCG-pZ-XK7">
-                                <rect key="frame" x="180" y="201" width="240" height="198"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="sMx-zf-XI8"/>
-                                    <constraint firstAttribute="width" constant="250" id="w4l-Vq-sHC"/>
-                                </constraints>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" layoutMarginsFollowReadableWidth="YES" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="uFg-jE-zB2">
+                                <rect key="frame" x="0.0" y="145" width="600" height="284"/>
+                                <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="0.0"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YCG-pZ-XK7" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="YoC-Z6-PNR"/>
-                            <constraint firstItem="YCG-pZ-XK7" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="sKh-6N-A1X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uFg-jE-zB2" secondAttribute="trailing" id="K0f-4I-HEA"/>
+                            <constraint firstItem="uFg-jE-zB2" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="KrV-wh-jnV"/>
+                            <constraint firstItem="uFg-jE-zB2" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="lCc-Ke-CjZ"/>
+                            <constraint firstItem="uFg-jE-zB2" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="mJd-h1-cEU"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="qrImageView" destination="YCG-pZ-XK7" id="Bps-Tl-spg"/>
+                        <outlet property="cardImageView" destination="uFg-jE-zB2" id="x2i-Yk-x5y"/>
+                        <segue destination="9LQ-Bg-i8L" kind="show" identifier="QrView" id="t7b-ef-IQ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="764" y="-444"/>
+        </scene>
+        <!--Qr View Controller-->
+        <scene sceneID="X8A-5g-ss4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ac8-HU-eZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="9LQ-Bg-i8L" customClass="QrViewController" customModule="App" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IWi-cq-Shm"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Sm-Uj-EFd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UTD-Kw-ymG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v92-HR-T3O">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Rly-LR-8Kz"/>
+                                    <constraint firstAttribute="width" constant="250" id="WiQ-Jx-rzO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v92-HR-T3O" firstAttribute="centerX" secondItem="UTD-Kw-ymG" secondAttribute="centerX" id="OyR-21-s3e"/>
+                            <constraint firstItem="v92-HR-T3O" firstAttribute="centerY" secondItem="UTD-Kw-ymG" secondAttribute="centerY" id="gOp-nG-hJG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="izh-BN-1M1"/>
+                    <connections>
+                        <outlet property="qrImageView" destination="v92-HR-T3O" id="3KW-iC-lf1"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1501" y="-456"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -313,6 +348,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="card" width="639" height="401"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>

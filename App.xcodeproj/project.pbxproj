@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39DE7037A82DE4B4B05F8D31 /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59A307F12E2EC231FFDCFCE /* Pods_App.framework */; };
+		52D936CC1CCAFADA003F2108 /* QrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D936CB1CCAFADA003F2108 /* QrViewController.swift */; };
 		8350F44B1CC984C50096AD61 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350F44A1CC984C50096AD61 /* TableViewCell.swift */; };
 		83B3E2EF1CCAF0CE00B8DB73 /* CuponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3E2EE1CCAF0CE00B8DB73 /* CuponViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		83B3E2F21CCB007D00B8DB73 /* Cupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3E2F11CCB007D00B8DB73 /* Cupon.swift */; settings = {ASSET_TAGS = (); }; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		17AC9D317084184D0EEA17E4 /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
+		52D936CB1CCAFADA003F2108 /* QrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QrViewController.swift; sourceTree = "<group>"; };
 		55A60B19A4D78EA50D1CA506 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
 		8350F44A1CC984C50096AD61 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		83B3E2EE1CCAF0CE00B8DB73 /* CuponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuponViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				83EA4ECD1CC04AFB00C20EC1 /* FirstViewController.swift */,
 				83EA4ECF1CC04AFB00C20EC1 /* SecondViewController.swift */,
 				83EA4ED11CC04AFB00C20EC1 /* Main.storyboard */,
+				52D936CB1CCAFADA003F2108 /* QrViewController.swift */,
 				83EA4ED41CC04AFB00C20EC1 /* Assets.xcassets */,
 				83EA4ED61CC04AFB00C20EC1 /* LaunchScreen.storyboard */,
 				83EA4ED91CC04AFB00C20EC1 /* Info.plist */,
@@ -243,6 +246,7 @@
 				8350F44B1CC984C50096AD61 /* TableViewCell.swift in Sources */,
 				83FE843B1CC85FB9005B7B97 /* TabBarViewController.swift in Sources */,
 				83EA4ECE1CC04AFB00C20EC1 /* FirstViewController.swift in Sources */,
+				52D936CC1CCAFADA003F2108 /* QrViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
