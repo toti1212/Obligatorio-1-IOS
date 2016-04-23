@@ -10,10 +10,20 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var signInOutlet: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        self.navigationController!.navigationBar.shadowImage = UIImage()
+        signInOutlet.layer.cornerRadius = 5;
+        
+
+
     }
 
     override func didReceiveMemoryWarning() {
