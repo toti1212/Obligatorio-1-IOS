@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class CuponTableViewCell: UITableViewCell {
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var profileName: UILabel!
@@ -24,5 +24,6 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+
 
 }

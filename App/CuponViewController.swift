@@ -9,7 +9,6 @@
 import UIKit
 import QRCode
 
-
 class CuponViewController: UIViewController {
 
     @IBOutlet weak var imageCuponQR: UIImageView!
@@ -19,6 +18,8 @@ class CuponViewController: UIViewController {
     
     var descripcion:String!
     var nombre : String!
+    var imagen : String!
+    var cuponId: String!
     
     override func viewDidLoad() {
 
@@ -26,9 +27,11 @@ class CuponViewController: UIViewController {
         
         self.productName.text = descripcion
         self.desc.text = nombre
+        self.imageCupon.image = UIImage(named: imagen)
+       
         
         imageCuponQR.image = {
-            var qrCode = QRCode("ucu@ucu.com")!
+            var qrCode = QRCode(cuponId)!
             qrCode.size = self.imageCuponQR.bounds.size
             qrCode.errorCorrection = .High
             return qrCode.image

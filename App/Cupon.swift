@@ -10,11 +10,19 @@ import Foundation
 
 
 
-class Usuario {
+public class Cupon {
     
+    var cuponId: String = ""
     var cuponName: String = ""
     var cuponDescription: String = ""
+    var cuponImage: String = ""
     
-    
+    init(cuponId:String, cuponName:String, cuponDescription: String, cuponImage:String){
+        
+        self.cuponId = cuponId
+        self.cuponName = cuponName
+        self.cuponDescription = cuponDescription
+        self.cuponImage = cuponImage
+    }
     
 }
