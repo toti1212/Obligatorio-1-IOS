@@ -1,5 +1,10 @@
 #Obligatorio 1 - Electiva IOS
 
+Integrantes:
+	
+- Santiago Berrueta
+- Rodrigo Suarez
+	
 ##Descripción general
 
 Esta propuesta responde a la necesidad de una cadena de supermados de contar con una aplicación móvil para su tarjeta de puntos. Esta app permite gestionar todo lo referente a planes de afinidad (loyalty).
