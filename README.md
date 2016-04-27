@@ -29,7 +29,7 @@ A continuación se detalla la interacción del usuario con la aplicación mo�
 ###Login
 
 1. Usuario ingresa e­mail y password.
-2. App valida que usuario sea `ucu@ucu.com` y password `ucu2016
+2. App valida que usuario sea `ucu@ucu.com` y password `ucu2016`
 	- **a Valida ok**
 		- App sigue a la pantalla de inicio
 	- **b No valida ok**
