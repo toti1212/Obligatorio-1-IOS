@@ -31,8 +31,8 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    let validEmail:String = "."
-    let validPass:String = "."
+    let validEmail:String = "ucu@ucu.com"
+    let validPass:String = "ucu2016"
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passTextField: UITextField!
@@ -47,6 +47,9 @@ class LoginViewController: UIViewController {
             if(emailTextField.text == validEmail){
                 
                 if(passTextField.text == validPass){
+                    emailTextField.text = ""
+                    passTextField.text = ""
+                    errorMessageLabel.text = ""
                     performSegueWithIdentifier("Inicio", sender: nil)
                     /*
                     let next = self.storyboard?.instantiateViewControllerWithIdentifier("Inicio") as! FirstViewController
@@ -57,24 +60,9 @@ class LoginViewController: UIViewController {
                 
             }else{
                 errorMessageLabel.text = "Email Incorrect"
-
             }
-                    //go to other screen
-                
-            }
+        }
     
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -25,8 +25,8 @@ class CuponViewController: UIViewController {
 
         super.viewDidLoad()
         
-        self.productName.text = descripcion
-        self.desc.text = nombre
+        self.productName.text = nombre
+        self.desc.text = descripcion
         self.imageCupon.image = UIImage(named: imagen)
        
         

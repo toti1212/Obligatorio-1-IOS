@@ -28,16 +28,16 @@ class SecondViewController: UIViewController,UITableViewDelegate, UITableViewDat
         let image9 = "ninos"
         let image10 = "acc-escritorio"
         
-        let cupon1 = Cupon(cuponId: "CUPON1", cuponName: "Descuento 10%", cuponDescription: "Descuento en Entretenimiento", cuponImage: image1)
-        let cupon2 = Cupon(cuponId: "CUPON2", cuponName: "Descuento 15%", cuponDescription: "Descuento en Escolares", cuponImage: image2)
-        let cupon3 = Cupon(cuponId: "CUPON3", cuponName: "Descuento 20%", cuponDescription: "Descuento en Helados", cuponImage: image3)
-        let cupon4 = Cupon(cuponId: "CUPON4", cuponName: "Descuento 10%", cuponDescription: "Descuento en Entretenimiento", cuponImage: image4)
-        let cupon5 = Cupon(cuponId: "CUPON5", cuponName: "Descuento 10%", cuponDescription: "Descuento en Entretenimiento", cuponImage: image5)
-        let cupon6 = Cupon(cuponId: "CUPON6", cuponName: "Descuento 10%", cuponDescription: "Descuento en Entretenimiento", cuponImage: image6)
-        let cupon7 = Cupon(cuponId: "CUPON7", cuponName: "Descuento 10%", cuponDescription: "Descuento en Entretenimiento", cuponImage: image7)
-        let cupon8 = Cupon(cuponId: "CUPON8", cuponName: "Descuento 10%", cuponDescription: "Descuento en Entretenimiento", cuponImage: image8)
-        let cupon9 = Cupon(cuponId: "CUPON9", cuponName: "Descuento 10%", cuponDescription: "Entretenimiento", cuponImage: image9)
-        let cupon10 = Cupon(cuponId: "CUPON10", cuponName: "Descuento 10%", cuponDescription: "Entretenimiento", cuponImage: image10)
+        let cupon1 = Cupon(cuponId: "CUPON1", cuponName: "Descuento 10%", cuponDescription: "Entretenimiento", cuponImage: image1)
+        let cupon2 = Cupon(cuponId: "CUPON2", cuponName: "Descuento 15%", cuponDescription: "Escolares", cuponImage: image2)
+        let cupon3 = Cupon(cuponId: "CUPON3", cuponName: "Descuento 20%", cuponDescription: "Helados", cuponImage: image3)
+        let cupon4 = Cupon(cuponId: "CUPON4", cuponName: "Descuento 25%", cuponDescription: "Herramientas", cuponImage: image4)
+        let cupon5 = Cupon(cuponId: "CUPON5", cuponName: "Descuento 10%", cuponDescription: "Jardineria", cuponImage: image5)
+        let cupon6 = Cupon(cuponId: "CUPON6", cuponName: "Descuento 15%", cuponDescription: "Limpieza", cuponImage: image6)
+        let cupon7 = Cupon(cuponId: "CUPON7", cuponName: "Descuento 20%", cuponDescription: "Mascotas", cuponImage: image7)
+        let cupon8 = Cupon(cuponId: "CUPON8", cuponName: "Descuento 10%", cuponDescription: "Música", cuponImage: image8)
+        let cupon9 = Cupon(cuponId: "CUPON9", cuponName: "Descuento 20%", cuponDescription: "Niños", cuponImage: image9)
+        let cupon10 = Cupon(cuponId: "CUPON10", cuponName: "Descuento 5%", cuponDescription: "Ac. de Escritorio", cuponImage: image10)
         
         data += [cupon1,cupon2,cupon3,cupon4,cupon5,cupon6,cupon7,cupon8,cupon9,cupon10]
         
@@ -66,7 +66,6 @@ class SecondViewController: UIViewController,UITableViewDelegate, UITableViewDat
     }
     
     
-    
     @available(iOS 2.0, *)
     internal func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
@@ -85,8 +84,6 @@ class SecondViewController: UIViewController,UITableViewDelegate, UITableViewDat
     }
     
     
-    
-    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.performSegueWithIdentifier("VerCupon", sender: indexPath)
     }
@@ -98,12 +95,7 @@ class SecondViewController: UIViewController,UITableViewDelegate, UITableViewDat
             let cupon = segue.destinationViewController as! CuponViewController;
             let indexPath = sender as! NSIndexPath
             let index = indexPath.item
-            
-            //let cell = tableViewTest.cellForRowAtIndexPath(indexPath) as UITableViewCell!
-            //let celda = cell as! CuponTableViewCell
-            //cupon.descripcion = celda.profileDescription.text
-            //cupon.nombre = celda.profileName.text
-
+    
             cupon.descripcion = data[index].cuponDescription
             cupon.nombre = data[index].cuponName
             cupon.imagen = data[index].cuponImage
